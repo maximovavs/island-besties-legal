@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex,nofollow">
+  <title>TikTok Authorization — Island Besties Publisher</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header><nav><a class="brand" href="./">Island Besties Publisher</a><div class="links"><a href="privacy.html">Privacy Policy</a><a href="terms.html">Terms of Use</a><a href="data-deletion.html">Data Deletion</a></div></nav></header>
+<main>
+  <section class="hero">
+    <span class="badge">TIKTOK AUTHORIZATION</span>
+    <h1 id="title">Authorization response received</h1>
+    <p class="lead" id="message">You may return to the Island Besties Publisher setup flow.</p>
+    <p class="notice">Do not share the address bar, authorization code, screenshots, or private credentials with anyone.</p>
+  </section>
+</main>
+<footer>© 2026 Island Besties Publisher · Cyprus</footer>
+<script>
+  const params = new URLSearchParams(window.location.search);
+  const error = params.get('error');
+  if (error) {
+    document.getElementById('title').textContent = 'TikTok authorization was not completed';
+    document.getElementById('message').textContent = 'Return to the setup flow and try again. No account password was collected by this page.';
+  }
+</script>
+</body>
+</html>
